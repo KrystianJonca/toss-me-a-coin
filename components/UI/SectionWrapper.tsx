@@ -8,7 +8,7 @@ interface SectionWrapperProps {
 const SectionWrapper: React.FC<SectionWrapperProps> = ({ id, children }) => {
   return (
     <section
-      className="max-w-7xl mx-auto flex items-center justify-center"
+      className="flex items-center justify-center"
       {...(typeof id !== undefined && `id=${id}`)}
     >
       {children}
