@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import Button from '../UI/Button';
-import SectionWrapper from '../UI/SectionWrapper';
+import { Button, SectionWrapper, GradientHeading } from '../UI';
 import Testimonial from './Testimonial';
 
 const HeroSection: React.FC = () => {
@@ -13,11 +12,7 @@ const HeroSection: React.FC = () => {
   return (
     <SectionWrapper id="hero">
       <div className="text-center mt-8 sm:mt-10 md:mt-12 max-w-5xl">
-        <span className="block bg-clip-text text-transparent bg-gradient-to-r to-darkBlue from-gold p-2">
-          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl p-2">
-            Crypto Donations Made Easy For Everyone.
-          </h1>
-        </span>
+        <GradientHeading>Crypto Donations Made Easy For Everyone.</GradientHeading>
 
         <p className="text-md sm:text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto p-4">
           Toss Me A Coin is the most convenient way to accept cryptocurrency donations from your
