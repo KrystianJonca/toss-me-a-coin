@@ -24,7 +24,7 @@ const Logo: React.FC<LogoProps> = ({ navLogo = true }) => {
 
       <div className="flex justify-center items-center sm:hidden h-16 w-auto cursor-pointer">
         <Link href="/" passHref>
-          <Image src="/LogoSmall.webp" alt="Toss Me A Coins" width="48" height="48" />
+          <Image src="/LogoSmall.webp" alt="Toss Me A Coins" width="64" height="64" />
         </Link>
       </div>
     </>
