@@ -1,14 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-import SectionWrapper from '../UI/SectionWrapper';
-import Heading from '../UI/Heading';
+import { Heading, SectionWrapper } from '../UI';
 
 const Info: React.FC = () => {
   return (
-    <div className="bg-lightBlue text-white py-4 shadow-sm">
+    <div className="bg-lightBlue text-white shadow-sm">
       <SectionWrapper id="info">
-        <div className="text-center sm:my-4 md:my-6 max-w-5xl">
+        <div className="text-center max-w-5xl">
           <Heading>Give your fans an easier way to donate their favorite cryptocurrencies</Heading>
           <p className="text-sm sm:text-md md:text-xl py-2">
             Toss Me A Coin makes crypto donations fun and easy. In just a couple of clicks your
