@@ -12,7 +12,7 @@ datasource db {
 
 model Creator {
   id          Int      @id @default(autoincrement())
-  ethAdress   String   @unique
+  ethAddress  String   @unique
   username    String   @unique
   email       String?  @unique
   name        String? 
