@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import SignUpForm from '../SignUpForm/SignUpForm';
 
 import { Button, SectionWrapper, GradientHeading } from '../UI';
 import Testimonial from './Testimonial';
@@ -19,25 +19,11 @@ const HeroSection: React.FC = () => {
           fans.
         </p>
 
-        <div className="pt-4 sm:pt-8">
-          <div className="mb-6 sm:mb-10 text-xs sm:text-md md:text-xl ">
-            <span className="py-3 px-6 sm:py-6 sm:px-12 shadow-[0px_4px_20px_rgba(0,0,0,0.2)] rounded-full font-semibold ">
-              <span>tossmeacoin.com/</span>{' '}
-              <input
-                className="focus:outline-none sm:w-1/5"
-                type="text"
-                maxLength={18}
-                placeholder="Your Username"
-              />{' '}
-            </span>
-          </div>
-          <Button onClick={handleClick}>Start My Page</Button>
+        <SignUpForm />
 
-          <p className="font-thin text-md py-2 sm:py-4 px-4">
-            It&apos;s free and you only need to connect your crypto wallet of choice.
-          </p>
-        </div>
-
+        <p className="font-thin text-md py-2 sm:py-4 px-4">
+          It&apos;s free and you only need to connect your crypto wallet of choice.
+        </p>
         <div className="flex flex-wrap items-center xs:items-start justify-evenly py-4 sm:pb-8">
           <Testimonial>The best platform for accepting multiple crypto</Testimonial>
           <Testimonial>Simple, fast and very user-friendly</Testimonial>
