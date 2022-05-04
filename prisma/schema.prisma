@@ -14,12 +14,10 @@ model Creator {
   id          Int      @id @default(autoincrement())
   ethAddress  String   @unique
   username    String   @unique
-  email       String?  @unique
   name        String? 
   bio         String?
+  link        String?
   image       String?
-  header      String?
-  description String?
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   @@map(name: "creators")
